@@ -1,0 +1,1270 @@
+local TheRakeMod = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local SideBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local HomeButton = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local FolderButton = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local UnknowButton = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local SettingsButton = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local G = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local B = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local R = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Home = Instance.new("Frame")
+local Profile = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Username = Instance.new("TextLabel")
+local UserId = Instance.new("TextLabel")
+local Rejoin = Instance.new("ImageButton")
+local Title_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local Folder = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local EspPlaces = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Button = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local EspFlareGun = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Button_2 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local EspBox = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local Button_3 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local IncreaseLight = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local Button_4 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local UIStroke_1 = Instance.new("UIStroke")
+local UIStroke_2 = Instance.new("UIStroke")
+local UIStroke_3 = Instance.new("UIStroke")
+local UIStroke_4 = Instance.new("UIStroke")
+local UIStroke_5 = Instance.new("UIStroke")
+local UIStroke_6 = Instance.new("UIStroke")
+local UIStroke_7 = Instance.new("UIStroke")
+local UIStroke_8 = Instance.new("UIStroke")
+local UIEStrokeBetch = Instance.new("UIStroke")
+
+UIEStrokeBetch.Parent = Button_4
+UIEStrokeBetch.Thickness = 2.200000047683716
+UIEStrokeBetch.Color = Color3.fromRGB(83,83,83)
+UIEStrokeBetch.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_1.Parent = HomeButton
+UIStroke_1.Thickness = 0.699999988079071
+UIStroke_1.Color = Color3.fromRGB(157,157,157)
+UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_2.Parent = FolderButton
+UIStroke_2.Thickness = 0.699999988079071
+UIStroke_2.Color = Color3.fromRGB(157,157,157)
+UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_3.Parent = UnknowButton
+UIStroke_3.Thickness = 0.699999988079071
+UIStroke_3.Color = Color3.fromRGB(157,157,157)
+UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_4.Parent = SettingsButton
+UIStroke_4.Thickness = 0.699999988079071
+UIStroke_4.Color = Color3.fromRGB(157,157,157)
+UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_5.Parent = Profile
+UIStroke_5.Thickness = 0.6000000238418579
+UIStroke_5.Color = Color3.fromRGB(255,255,255)
+UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_6.Parent = Button
+UIStroke_6.Thickness = 2.200000047683716
+UIStroke_6.Color = Color3.fromRGB(83,83,83)
+UIStroke_6.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_7.Parent = Button_2
+UIStroke_7.Thickness = 2.200000047683716
+UIStroke_7.Color = Color3.fromRGB(83,83,83)
+UIStroke_7.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_8.Parent = Button_3
+UIStroke_8.Thickness = 2.200000047683716
+UIStroke_8.Color = Color3.fromRGB(83,83,83)
+UIStroke_8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+TheRakeMod.Name = "The Rake Mod"
+TheRakeMod.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TheRakeMod.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TheRakeMod.ResetOnSpawn = false
+TheRakeMod.DisplayOrder = 999999999
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TheRakeMod
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 0.650
+MainFrame.Position = UDim2.new(0.36449039, 0, 0.341066241, 0)
+MainFrame.Size = UDim2.new(0.269633442, 0, 0.315074027, 0)
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = MainFrame
+
+UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 1.624
+
+SideBar.Name = "SideBar"
+SideBar.Parent = MainFrame
+SideBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SideBar.BackgroundTransparency = 0.500
+SideBar.Size = UDim2.new(0.168868899, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.349999994, 0)
+UICorner_2.Parent = SideBar
+
+Title.Name = "Title"
+Title.Parent = SideBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.134000003, 0, 0.0250000004, 0)
+Title.Size = UDim2.new(1.30075407, 0, 0.089164868, 0)
+Title.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.ExtraLight, Enum.FontStyle.Normal)
+Title.Text = "Mod"
+Title.TextColor3 = Color3.fromRGB(197, 197, 197)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = SideBar
+HomeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeButton.BackgroundTransparency = 0.800
+HomeButton.Position = UDim2.new(0.189999998, 0, 0.136000007, 0)
+HomeButton.Size = UDim2.new(0.649999976, 0, 0.178000003, 0)
+HomeButton.Image = "rbxassetid://3926305904"
+HomeButton.ImageColor3 = Color3.fromRGB(185, 185, 185)
+HomeButton.ImageRectOffset = Vector2.new(964, 204)
+HomeButton.ImageRectSize = Vector2.new(36, 36)
+HomeButton.Modal = true
+
+UICorner_3.CornerRadius = UDim.new(500, 500)
+UICorner_3.Parent = HomeButton
+
+FolderButton.Name = "FolderButton"
+FolderButton.Parent = SideBar
+FolderButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FolderButton.BackgroundTransparency = 0.800
+FolderButton.Position = UDim2.new(0.189999998, 0, 0.351000011, 0)
+FolderButton.Size = UDim2.new(0.650377035, 0, 0.178329736, 0)
+FolderButton.Image = "rbxassetid://3926305904"
+FolderButton.ImageColor3 = Color3.fromRGB(185, 185, 185)
+FolderButton.ImageRectOffset = Vector2.new(802, 41)
+FolderButton.ImageRectSize = Vector2.new(40, 40)
+
+UICorner_4.CornerRadius = UDim.new(500, 500)
+UICorner_4.Parent = FolderButton
+
+UnknowButton.Name = "UnknowButton"
+UnknowButton.Parent = SideBar
+UnknowButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnknowButton.BackgroundTransparency = 0.800
+UnknowButton.Position = UDim2.new(0.189999998, 0, 0.56099999, 0)
+UnknowButton.Size = UDim2.new(0.650377035, 0, 0.178329736, 0)
+UnknowButton.Image = "rbxassetid://3926307971"
+UnknowButton.ImageColor3 = Color3.fromRGB(185, 185, 185)
+UnknowButton.ImageRectOffset = Vector2.new(164, 364)
+UnknowButton.ImageRectSize = Vector2.new(36, 36)
+
+UICorner_5.CornerRadius = UDim.new(500, 500)
+UICorner_5.Parent = UnknowButton
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = SideBar
+SettingsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton.BackgroundTransparency = 0.800
+SettingsButton.Position = UDim2.new(0.189999998, 0, 0.771000028, 0)
+SettingsButton.Size = UDim2.new(0.650377035, 0, 0.178329736, 0)
+SettingsButton.Image = "rbxassetid://3926307971"
+SettingsButton.ImageColor3 = Color3.fromRGB(185, 185, 185)
+SettingsButton.ImageRectOffset = Vector2.new(324, 124)
+SettingsButton.ImageRectSize = Vector2.new(36, 36)
+
+UICorner_6.CornerRadius = UDim.new(500, 500)
+UICorner_6.Parent = SettingsButton
+
+G.Name = "G"
+G.Parent = MainFrame
+G.BackgroundColor3 = Color3.fromRGB(12, 255, 0)
+G.BackgroundTransparency = 0.900
+G.Position = UDim2.new(0.554402113, 0, 0.23623167, 0)
+G.Size = UDim2.new(0.197218031, 0, 0.320225149, 0)
+
+UICorner_7.CornerRadius = UDim.new(500, 500)
+UICorner_7.Parent = G
+
+B.Name = "B"
+B.Parent = MainFrame
+B.BackgroundColor3 = Color3.fromRGB(8, 0, 255)
+B.BackgroundTransparency = 0.900
+B.Position = UDim2.new(0.480182409, 0, 0.44712615, 0)
+B.Size = UDim2.new(0.197218031, 0, 0.320225149, 0)
+
+UICorner_8.CornerRadius = UDim.new(500, 500)
+UICorner_8.Parent = B
+
+R.Name = "R"
+R.Parent = MainFrame
+R.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+R.BackgroundTransparency = 0.900
+R.Position = UDim2.new(0.410601497, 0, 0.23623167, 0)
+R.Size = UDim2.new(0.197218031, 0, 0.320225149, 0)
+
+UICorner_9.CornerRadius = UDim.new(500, 500)
+UICorner_9.Parent = R
+
+Home.Name = "Home"
+Home.Parent = MainFrame
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.168120295, 0, 0, 0)
+Home.Size = UDim2.new(0.785639048, 0, 0.997422695, 0)
+
+Profile.Name = "Profile"
+Profile.Parent = Home
+Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Profile.BackgroundTransparency = 0.600
+Profile.Position = UDim2.new(0.0599999987, 0, 0.0199999996, 0)
+Profile.Size = UDim2.new(0.289484918, 0, 0.37023595, 0)
+Profile.Image = "rbxassetid://6996103201"
+
+UICorner_10.CornerRadius = UDim.new(500, 500)
+UICorner_10.Parent = Profile
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(126, 126, 126)), ColorSequenceKeypoint.new(0.99, Color3.fromRGB(159, 159, 159)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = Profile
+
+Username.Name = "Username"
+Username.Parent = Home
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.025542656, 0, 0.402903914, 0)
+Username.Size = UDim2.new(1.03022575, 0, 0.0925589874, 0)
+Username.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.ExtraLight, Enum.FontStyle.Normal)
+Username.Text = "Roblox (@Roblox)"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+UserId.Name = "UserId"
+UserId.Parent = Home
+UserId.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserId.BackgroundTransparency = 1.000
+UserId.BorderSizePixel = 0
+UserId.Position = UDim2.new(0.025542656, 0, 0.495462894, 0)
+UserId.Size = UDim2.new(0.744997919, 0, 0.065335758, 0)
+UserId.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.ExtraLight, Enum.FontStyle.Normal)
+UserId.Text = "#1"
+UserId.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserId.TextScaled = true
+UserId.TextSize = 14.000
+UserId.TextWrapped = true
+UserId.TextXAlignment = Enum.TextXAlignment.Left
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Home
+Rejoin.BackgroundColor3 = Color3.fromRGB(253, 251, 255)
+Rejoin.BackgroundTransparency = 1.000
+Rejoin.Position = UDim2.new(0.0217734948, 0, 0.81654948, 0)
+Rejoin.Size = UDim2.new(0.098678872, 0, 0.126205087, 0)
+Rejoin.ZIndex = 2
+Rejoin.Image = "rbxassetid://3926307971"
+Rejoin.ImageRectOffset = Vector2.new(244, 324)
+Rejoin.ImageRectSize = Vector2.new(36, 36)
+
+Title_2.Name = "Title"
+Title_2.Parent = Home
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.397208065, 0, 0.0163339395, 0)
+Title_2.Size = UDim2.new(0.574712694, 0, 0.0816696957, 0)
+Title_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.ExtraLight, Enum.FontStyle.Normal)
+Title_2.Text = "Home"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.16, 0.98), NumberSequenceKeypoint.new(0.30, 0.89), NumberSequenceKeypoint.new(0.52, 0.73), NumberSequenceKeypoint.new(0.70, 0.49), NumberSequenceKeypoint.new(0.98, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_2.Parent = Title_2
+
+Folder.Name = "Folder"
+Folder.Parent = MainFrame
+Folder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Folder.BackgroundTransparency = 1.000
+Folder.BorderSizePixel = 0
+Folder.Position = UDim2.new(0.168120295, 0, 0, 0)
+Folder.Size = UDim2.new(0.785639048, 0, 0.997422695, 0)
+Folder.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = Folder
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.397208065, 0, 0.0163339395, 0)
+Title_3.Size = UDim2.new(0.574712694, 0, 0.0816696957, 0)
+Title_3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.ExtraLight, Enum.FontStyle.Normal)
+Title_3.Text = "Folder"
+Title_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.16, 0.98), NumberSequenceKeypoint.new(0.30, 0.89), NumberSequenceKeypoint.new(0.52, 0.73), NumberSequenceKeypoint.new(0.70, 0.49), NumberSequenceKeypoint.new(0.98, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_3.Parent = Title_3
+
+EspPlaces.Name = "EspPlaces"
+EspPlaces.Parent = Folder
+EspPlaces.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EspPlaces.BackgroundTransparency = 0.800
+EspPlaces.BorderSizePixel = 0
+EspPlaces.Position = UDim2.new(0.000952979783, 0, 0.0850309953, 0)
+EspPlaces.Size = UDim2.new(0.739647269, 0, 0.106288753, 0)
+EspPlaces.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Light, Enum.FontStyle.Normal)
+EspPlaces.Text = "ESP Place"
+EspPlaces.TextColor3 = Color3.fromRGB(58, 58, 58)
+EspPlaces.TextScaled = true
+EspPlaces.TextSize = 17.000
+EspPlaces.TextWrapped = true
+
+UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_4.Parent = EspPlaces
+
+UITextSizeConstraint.Parent = EspPlaces
+UITextSizeConstraint.MaxTextSize = 15
+
+Button.Name = "Button"
+Button.Parent = EspPlaces
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 0.650
+Button.Position = UDim2.new(0.0393258445, 0, 0, 0)
+Button.Size = UDim2.new(0.112359554, 0, 1, 0)
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+Button.TextTransparency = 1.000
+
+UICorner_11.CornerRadius = UDim.new(500, 500)
+UICorner_11.Parent = Button
+
+EspFlareGun.Name = "EspFlareGun"
+EspFlareGun.Parent = Folder
+EspFlareGun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EspFlareGun.BackgroundTransparency = 0.800
+EspFlareGun.BorderSizePixel = 0
+EspFlareGun.Position = UDim2.new(0.000952979783, 0, 0.232270241, 0)
+EspFlareGun.Size = UDim2.new(0.739647269, 0, 0.106288753, 0)
+EspFlareGun.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Light, Enum.FontStyle.Normal)
+EspFlareGun.Text = "ESP Flare Gun"
+EspFlareGun.TextColor3 = Color3.fromRGB(58, 58, 58)
+EspFlareGun.TextScaled = true
+EspFlareGun.TextSize = 17.000
+EspFlareGun.TextWrapped = true
+
+UIGradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_5.Parent = EspFlareGun
+
+UITextSizeConstraint_2.Parent = EspFlareGun
+UITextSizeConstraint_2.MaxTextSize = 15
+
+Button_2.Name = "Button"
+Button_2.Parent = EspFlareGun
+Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.BackgroundTransparency = 0.650
+Button_2.Position = UDim2.new(0.0393258445, 0, 0, 0)
+Button_2.Size = UDim2.new(0.112359554, 0, 1, 0)
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+Button_2.TextTransparency = 1.000
+
+UICorner_12.CornerRadius = UDim.new(500, 500)
+UICorner_12.Parent = Button_2
+
+EspBox.Name = "EspBox"
+EspBox.Parent = Folder
+EspBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EspBox.BackgroundTransparency = 0.800
+EspBox.BorderSizePixel = 0
+EspBox.Position = UDim2.new(0.000952979783, 0, 0.384768039, 0)
+EspBox.Size = UDim2.new(0.739647269, 0, 0.106288753, 0)
+EspBox.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Light, Enum.FontStyle.Normal)
+EspBox.Text = "ESP Box"
+EspBox.TextColor3 = Color3.fromRGB(58, 58, 58)
+EspBox.TextScaled = true
+EspBox.TextSize = 17.000
+EspBox.TextWrapped = true
+
+UIGradient_6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_6.Parent = EspBox
+
+UITextSizeConstraint_3.Parent = EspBox
+UITextSizeConstraint_3.MaxTextSize = 15
+
+Button_3.Name = "Button"
+Button_3.Parent = EspBox
+Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.BackgroundTransparency = 0.650
+Button_3.Position = UDim2.new(0.0393258445, 0, 0, 0)
+Button_3.Size = UDim2.new(0.112359554, 0, 1, 0)
+Button_3.Text = ""
+Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.TextSize = 14.000
+Button_3.TextTransparency = 1.000
+
+UICorner_13.CornerRadius = UDim.new(500, 500)
+UICorner_13.Parent = Button_3
+
+IncreaseLight.Name = "IncreaseLight"
+IncreaseLight.Parent = Folder
+IncreaseLight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IncreaseLight.BackgroundTransparency = 0.800
+IncreaseLight.BorderSizePixel = 0
+IncreaseLight.Position = UDim2.new(0.00100000005, 0, 0.542999983, 0)
+IncreaseLight.Size = UDim2.new(0.739647269, 0, 0.106288753, 0)
+IncreaseLight.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Light, Enum.FontStyle.Normal)
+IncreaseLight.Text = "Increase Light"
+IncreaseLight.TextColor3 = Color3.fromRGB(58, 58, 58)
+IncreaseLight.TextScaled = true
+IncreaseLight.TextSize = 17.000
+IncreaseLight.TextWrapped = true
+
+UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_7.Parent = IncreaseLight
+
+UITextSizeConstraint_4.Parent = IncreaseLight
+UITextSizeConstraint_4.MaxTextSize = 15
+
+Button_4.Name = "Button"
+Button_4.Parent = IncreaseLight
+Button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_4.BackgroundTransparency = 0.650
+Button_4.Position = UDim2.new(0.0393258445, 0, 0, 0)
+Button_4.Size = UDim2.new(0.112359554, 0, 1, 0)
+Button_4.Text = ""
+Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_4.TextSize = 14.000
+Button_4.TextTransparency = 1.000
+
+UICorner_14.CornerRadius = UDim.new(500, 500)
+UICorner_14.Parent = Button_4
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0,0,0)), ColorSequenceKeypoint.new(0.382, Color3.fromRGB(0,0,0)), ColorSequenceKeypoint.new(0.384, Color3.fromRGB(54, 54, 54)), ColorSequenceKeypoint.new(0.521, Color3.fromRGB(54, 54, 54)), ColorSequenceKeypoint.new(0.522, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Rotation = 30
+UIGradient_8.Parent = MainFrame
+
+-- Scripts:
+
+local function QFXRS_fake_script() -- MainFrame.Main 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	--> Main
+	local ScreenGui = script.Parent.Parent
+	local MainFrame = ScreenGui.MainFrame
+	local SideBar = MainFrame.SideBar
+
+	--> SideBar
+	local FolderButton = SideBar.FolderButton
+	local HomeButton = SideBar.HomeButton
+	local SettingsButton = SideBar.SettingsButton
+	local UnknowButton = SideBar.UnknowButton
+
+	--> Frames
+	local FolderFrame = MainFrame.Folder
+	local HomeFrame = MainFrame.Home
+
+	-- Instances ::
+	local BlurEffect = Instance.new("BlurEffect")
+	local ColorCorrectionEffect = Instance.new("ColorCorrectionEffect")
+
+	-- Properties ::
+	--> BlurEffect
+	BlurEffect.Parent = game:GetService("Lighting")
+	BlurEffect.Enabled = true
+	BlurEffect.Size = 24
+
+	--> ColorCorrectionEffect
+	ColorCorrectionEffect.Parent = game:GetService("Lighting")
+	ColorCorrectionEffect.Enabled = true
+	ColorCorrectionEffect.Brightness = 0
+	ColorCorrectionEffect.Contrast = -0.25
+	ColorCorrectionEffect.Saturation = -0.6
+
+	-- Services ::
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
+
+	-- Tables/Others ::
+	local FrameTables = {}
+	local OpenCloseSecondsTween = 0.4
+
+	-- Bools ::
+	local OpenBool = true; local CanOpenBool = false
+	local ButtonChangeFrameDebounce = false
+
+	local EspBoxDebounce = false; local EspFlareGunDebounce = false; local EspPlacesDebounce = false; local IncreaseLightDebounce = false
+
+	-- Functions ::
+	local function GUI_CLOSE()
+		for i,v in pairs(ScreenGui:GetDescendants()) do
+			if v.ClassName == "Frame" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalPosition = v.Position;
+						OriginalBackroundTransparent = v.BackgroundTransparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = 1;
+						Position = v.Position - UDim2.new(0.014, 0, 0, 0);
+					}
+				):Play()
+			elseif v.ClassName == "ImageButton" or v.ClassName == "ImageLabel" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalPosition = v.Position;
+						OriginalBackroundTransparent = v.BackgroundTransparency;
+						OriginalImageTransparent = v.ImageTransparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = 1;
+						ImageTransparency = 1;
+						Position = v.Position - UDim2.new(0.014, 0, 0, 0);
+					}
+				):Play()
+			elseif v.ClassName == "TextButton" or v.ClassName == "TextLabel" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalPosition = v.Position;
+						OriginalBackroundTransparent = v.BackgroundTransparency;
+						OriginalTextTransparent = v.TextTransparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = 1;
+						TextTransparency = 1;
+						Position = v.Position - UDim2.new(0.014, 0, 0, 0);
+					}
+				):Play()
+			elseif v.ClassName == "UIStroke" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalTransparent = v.Transparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						Transparency = 1;
+					}
+				):Play()
+			end
+		end
+	end
+
+	local function GUI_OPEN()
+		for i,v in pairs(FrameTables) do
+			if v.FrameChildType == "Frame" then
+				TweenService:Create(
+					v.Child,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = v.OriginalBackroundTransparent;
+						Position = v.OriginalPosition;
+					}
+				):Play()
+			elseif v.FrameChildType == "ImageButton" or v.FrameChildType == "ImageLabel" then
+				TweenService:Create(
+					v.Child,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = v.OriginalBackroundTransparent;
+						ImageTransparency = v.OriginalImageTransparent;
+						Position = v.OriginalPosition;
+					}
+				):Play()
+			elseif v.FrameChildType == "TextButton" or v.FrameChildType == "TextLabel" then
+				TweenService:Create(
+					v.Child,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = v.OriginalBackroundTransparent;
+						TextTransparency = v.OriginalTextTransparent;
+						Position = v.OriginalPosition;
+					}
+				):Play()
+			elseif FrameTables[i].FrameChildType == "UIStroke" then
+				local TRENSF = TweenService:Create(
+					v.Child,
+					TweenInfo.new(OpenCloseSecondsTween, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						Transparency = v.OriginalTransparent;
+					}
+				)
+				TRENSF:Play()
+			end
+		end
+	end
+
+	local function EspPlaces_ON()
+		local ESPPlacesFolder = Instance.new("Folder", workspace)
+		ESPPlacesFolder.Name = "ESPPlacesFolder"
+		for i = 4, 0, -1 do
+			if i == 0 then
+				local BaseCamp = Instance.new("Part", ESPPlacesFolder)
+				BaseCamp.Transparency = 1
+				BaseCamp.Name = "BaseCamp"
+				BaseCamp.Size = Vector3.new(67.714, 20.5, 41.039)
+				BaseCamp.Position = Vector3.new(-42.061, 23.864, 201.865)
+				BaseCamp.Orientation = Vector3.new(0, 15, 0)
+				BaseCamp.CanCollide = false
+				BaseCamp.CanQuery = false
+				BaseCamp.CanTouch = false
+				BaseCamp.Anchored = true
+				coroutine.resume(coroutine.create(function()
+					local BillboardGui = Instance.new("BillboardGui")
+					local sd = Instance.new("TextLabel")
+					local UICorner = Instance.new("UICorner")
+					BillboardGui.Parent = BaseCamp
+					BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					BillboardGui.Active = true
+					BillboardGui.AlwaysOnTop = true
+					BillboardGui.LightInfluence = 1.000
+					BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+					BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+					sd.Name = "sd"
+					sd.Parent = BillboardGui
+					sd.BackgroundColor3 = Color3.fromRGB(255, 51, 51)
+					sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
+					sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+					sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+					sd.Text = "Base Camp"
+					sd.TextColor3 = Color3.fromRGB(0, 0, 0)
+					sd.TextSize = 23.000
+					sd.TextWrapped = true
+					UICorner.CornerRadius = UDim.new(0, 12)
+					UICorner.Parent = sd
+					local UIStroke_1 = Instance.new("UIStroke")
+					UIStroke_1.Parent = sd
+					UIStroke_1.Thickness = 0.6000000238418579
+					UIStroke_1.Color = Color3.fromRGB(68,68,68)
+					UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				end))
+			elseif i == 1 then
+				local ObservationTower = Instance.new("Part", ESPPlacesFolder)
+				ObservationTower.Transparency = 1
+				ObservationTower.Name = "ObservationTower"
+				ObservationTower.Size = Vector3.new(29.5, 53, 31.75)
+				ObservationTower.Position = Vector3.new(53.074, 36.587, -53.646)
+				ObservationTower.Orientation = Vector3.new(0, 15, 0)
+				ObservationTower.CanCollide = false
+				ObservationTower.CanQuery = false
+				ObservationTower.CanTouch = false
+				ObservationTower.Anchored = true
+				coroutine.resume(coroutine.create(function()
+					local BillboardGui = Instance.new("BillboardGui")
+					local sd = Instance.new("TextLabel")
+					local UICorner = Instance.new("UICorner")
+					BillboardGui.Parent = ObservationTower
+					BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					BillboardGui.Active = true
+					BillboardGui.AlwaysOnTop = true
+					BillboardGui.LightInfluence = 1.000
+					BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+					BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+					sd.Name = "sd"
+					sd.Parent = BillboardGui
+					sd.BackgroundColor3 = Color3.fromRGB(255, 84, 158)
+					sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
+					sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+					sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+					sd.Text = "Observation Tower"
+					sd.TextColor3 = Color3.fromRGB(0, 0, 0)
+					sd.TextSize = 23.000
+					sd.TextWrapped = true
+					UICorner.CornerRadius = UDim.new(0, 12)
+					UICorner.Parent = sd
+					local UIStroke_1 = Instance.new("UIStroke")
+					UIStroke_1.Parent = sd
+					UIStroke_1.Thickness = 0.6000000238418579
+					UIStroke_1.Color = Color3.fromRGB(68,68,68)
+					UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				end))
+			elseif i == 2 then
+				local PowerPlant = Instance.new("Part", ESPPlacesFolder)
+				PowerPlant.Transparency = 1
+				PowerPlant.Name = "PowerPlant"
+				PowerPlant.Size = Vector3.new(36, 21.5, 37.25)
+				PowerPlant.Position = Vector3.new(-292.75, 27, -212.125)
+				PowerPlant.Orientation = Vector3.new(0, 15, 0)
+				PowerPlant.CanCollide = false
+				PowerPlant.CanQuery = false
+				PowerPlant.CanTouch = false
+				PowerPlant.Anchored = true
+				coroutine.resume(coroutine.create(function()
+					local BillboardGui = Instance.new("BillboardGui")
+					local sd = Instance.new("TextLabel")
+					local UICorner = Instance.new("UICorner")
+					BillboardGui.Parent = PowerPlant
+					BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					BillboardGui.Active = true
+					BillboardGui.AlwaysOnTop = true
+					BillboardGui.LightInfluence = 1.000
+					BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+					BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+					sd.Name = "sd"
+					sd.Parent = BillboardGui
+					sd.BackgroundColor3 = Color3.fromRGB(89, 239, 255)
+					sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
+					sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+					sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+					sd.Text = "Power Plant"
+					sd.TextColor3 = Color3.fromRGB(0, 0, 0)
+					sd.TextSize = 23.000
+					sd.TextWrapped = true
+					UICorner.CornerRadius = UDim.new(0, 12)
+					UICorner.Parent = sd
+					local UIStroke_1 = Instance.new("UIStroke")
+					UIStroke_1.Parent = sd
+					UIStroke_1.Thickness = 0.6000000238418579
+					UIStroke_1.Color = Color3.fromRGB(68,68,68)
+					UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				end))
+			elseif i == 3 then
+				local SafeHouse = Instance.new("Part", ESPPlacesFolder)
+				SafeHouse.Transparency = 1
+				SafeHouse.Name = "SafeHouse"
+				SafeHouse.Size = Vector3.new(25.25, 19.5, 35.25)
+				SafeHouse.Position = Vector3.new(-371.614, 22.585, 76.352)
+				SafeHouse.Orientation = Vector3.new(0, 15, 0)
+				SafeHouse.CanCollide = false
+				SafeHouse.CanQuery = false
+				SafeHouse.CanTouch = false
+				SafeHouse.Anchored = true
+				coroutine.resume(coroutine.create(function()
+					local BillboardGui = Instance.new("BillboardGui")
+					local sd = Instance.new("TextLabel")
+					local UICorner = Instance.new("UICorner")
+					BillboardGui.Parent = SafeHouse
+					BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					BillboardGui.Active = true
+					BillboardGui.AlwaysOnTop = true
+					BillboardGui.LightInfluence = 1.000
+					BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+					BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+					sd.Name = "sd"
+					sd.Parent = BillboardGui
+					sd.BackgroundColor3 = Color3.fromRGB(108, 255, 106)
+					sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
+					sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+					sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+					sd.Text = "Safe House"
+					sd.TextColor3 = Color3.fromRGB(0, 0, 0)
+					sd.TextSize = 23.000
+					sd.TextWrapped = true
+					UICorner.CornerRadius = UDim.new(0, 12)
+					UICorner.Parent = sd
+					local UIStroke_1 = Instance.new("UIStroke")
+					UIStroke_1.Parent = sd
+					UIStroke_1.Thickness = 0.6000000238418579
+					UIStroke_1.Color = Color3.fromRGB(68,68,68)
+					UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				end))
+			elseif i == 4 then
+				local Shop = Instance.new("Part", ESPPlacesFolder)
+				Shop.Transparency = 1
+				Shop.Name = "Shop"
+				Shop.Size = Vector3.new(18, 15.25, 21.25)
+				Shop.Position = Vector3.new(-24.707, 20.405, -266.032)
+				Shop.Orientation = Vector3.new(0, 15, 0)
+				Shop.CanCollide = false
+				Shop.CanQuery = false
+				Shop.CanTouch = false
+				Shop.Anchored = true
+				coroutine.resume(coroutine.create(function()
+					local BillboardGui = Instance.new("BillboardGui")
+					local sd = Instance.new("TextLabel")
+					local UICorner = Instance.new("UICorner")
+					BillboardGui.Parent = Shop
+					BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					BillboardGui.Active = true
+					BillboardGui.AlwaysOnTop = true
+					BillboardGui.LightInfluence = 1.000
+					BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+					BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+					sd.Name = "sd"
+					sd.Parent = BillboardGui
+					sd.BackgroundColor3 = Color3.fromRGB(255, 172, 89)
+					sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
+					sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+					sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+					sd.Text = "Shop"
+					sd.TextColor3 = Color3.fromRGB(0, 0, 0)
+					sd.TextSize = 23.000
+					sd.TextWrapped = true
+					UICorner.CornerRadius = UDim.new(0, 12)
+					UICorner.Parent = sd
+					local UIStroke_1 = Instance.new("UIStroke")
+					UIStroke_1.Parent = sd
+					UIStroke_1.Thickness = 0.6000000238418579
+					UIStroke_1.Color = Color3.fromRGB(68,68,68)
+					UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				end))
+			end
+		end
+
+	end
+
+	local function EspPlaces_OFF()
+		if workspace:FindFirstChild("ESPPlacesFolder") then
+			workspace:FindFirstChild("ESPPlacesFolder"):Destroy()
+		end
+	end
+
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if input.KeyCode == Enum.KeyCode.K then
+				if CanOpenBool == true then
+					if OpenBool == true then
+						OpenBool = false
+						GUI_CLOSE()
+						TweenService:Create(ColorCorrectionEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+							Brightness = 0;
+							Contrast = 0;
+							Saturation = 0;
+						}):Play()
+						TweenService:Create(BlurEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+							Size = 0;
+						}):Play()
+					else
+						OpenBool = true
+						GUI_OPEN()
+						TweenService:Create(ColorCorrectionEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+							Brightness = 0;
+							Contrast = -0.25;
+							Saturation = -0.6;
+						}):Play()
+						TweenService:Create(BlurEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+							Size = 24;
+						}):Play()
+					end
+				end
+			end
+		end
+	end)
+
+	-- Button Functions::
+	HomeButton.MouseButton1Click:Connect(function()
+		if ButtonChangeFrameDebounce == false then
+			ButtonChangeFrameDebounce = true
+			FolderFrame.Visible = false
+			HomeFrame.Visible = true
+			TweenService:Create(MainFrame.UIGradient, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				Rotation = 30
+			}):Play()
+			coroutine.resume(coroutine.create(function()
+				wait(1)
+				TweenService:Create(MainFrame.UIGradient, TweenInfo.new(0.6, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					Offset = Vector2.new(0,0)
+				}):Play()
+				wait(0.6)
+				ButtonChangeFrameDebounce = false
+			end))
+		end
+	end)
+	FolderButton.MouseButton1Click:Connect(function()
+		if ButtonChangeFrameDebounce == false then
+			ButtonChangeFrameDebounce = true
+			HomeFrame.Visible = false
+			FolderFrame.Visible = true
+			TweenService:Create(MainFrame.UIGradient, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				Rotation = 180
+			}):Play()
+			coroutine.resume(coroutine.create(function()
+				wait(1)
+				TweenService:Create(MainFrame.UIGradient, TweenInfo.new(0.6, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					Offset = Vector2.new(0.327, 0)
+				}):Play()
+				wait(0.6)
+				ButtonChangeFrameDebounce = false
+			end))
+		end
+	end)
+	HomeFrame.Rejoin.MouseButton1Click:Connect(function()
+		GUI_CLOSE()
+		wait(1)
+		local TeleportService = game:GetService("TeleportService")
+		TeleportService:Teleport(game.PlaceId, game.Players.LocalPlayer)
+		game.Players.LocalPlayer:Kick("Rejoining...")
+	end)
+
+	--> Folder Buttons
+	local EspPlaces = FolderFrame.EspPlaces
+	local EspBox = FolderFrame.EspBox
+	local EspFlareGun = FolderFrame.EspFlareGun
+	local IncreaseLight = FolderFrame.IncreaseLight
+
+	EspPlaces.Button.MouseButton1Click:Connect(function()
+		if EspPlacesDebounce == false then
+			EspPlacesDebounce = true
+			TweenService:Create(EspPlaces.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			}):Play()
+			EspPlaces_ON()
+		else
+			EspPlacesDebounce = false
+			TweenService:Create(EspPlaces.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			}):Play()
+			EspPlaces_OFF()
+		end
+	end)
+
+	local OriginalLightAmbient = game:GetService("Lighting").Ambient
+	local OriginalLightFogEnd = game:GetService("Lighting").FogEnd
+	local OriginalLightFogColor = game:GetService("Lighting").FogColor
+	IncreaseLight.Button.MouseButton1Click:Connect(function()
+		if IncreaseLightDebounce == false then
+			IncreaseLightDebounce = true
+			OriginalLightAmbient = game:GetService("Lighting").Ambient
+			OriginalLightFogEnd = game:GetService("Lighting").FogEnd
+			TweenService:Create(IncreaseLight.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			}):Play()
+		else
+			IncreaseLightDebounce = false
+			TweenService:Create(IncreaseLight.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			}):Play()
+		end
+	end)
+
+	EspFlareGun.Button.MouseButton1Click:Connect(function()
+		if workspace:FindFirstChild("FlareGunPickUp") then
+			if EspFlareGunDebounce == false then
+				EspFlareGunDebounce = true
+				local BillboardGui = Instance.new("BillboardGui")
+				local sd_1 = Instance.new("TextLabel")
+				local UICorner_1 = Instance.new("UICorner")
+				local UIStroke_1 = Instance.new("UIStroke")
+
+				BillboardGui.Name = "BillboardGui"
+				BillboardGui.Parent = workspace:FindFirstChild("FlareGunPickUp").FlareGun
+				BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+				BillboardGui.Active = true
+				BillboardGui.AlwaysOnTop = true
+				BillboardGui.LightInfluence = 1.000
+				BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+				BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+
+				sd_1.LayoutOrder = 0
+				sd_1.TextWrapped = true
+				sd_1.BackgroundColor3 = Color3.fromRGB(203, 91, 93)
+				sd_1.Parent = BillboardGui
+				sd_1.Size = UDim2.new(0.800000012, 0,0.400000006, 0)
+				sd_1.BorderColor3 = Color3.fromRGB(27,42,53)
+				sd_1.Text = "Box"
+				sd_1.TextSize = 23
+				sd_1.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+				sd_1.Name = "sd"
+				sd_1.Position = UDim2.new(0.100000001, 0,0.300000012, 0)
+
+				UICorner_1.Parent = sd_1
+				UICorner_1.CornerRadius = UDim.new(0,12)
+
+				UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				UIStroke_1.Parent = sd_1
+				UIStroke_1.Thickness = 0.6000000238418579
+				UIStroke_1.Color = Color3.fromRGB(68,68,68)
+				TweenService:Create(EspFlareGun.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+				}):Play()
+			else
+				EspFlareGunDebounce = false
+				if workspace:FindFirstChild("FlareGunPickUp").FlareGun:FindFirstChild("BillboardGui") then
+					workspace:FindFirstChild("FlareGunPickUp").FlareGun:FindFirstChild("BillboardGui"):Destroy()
+				end
+				TweenService:Create(EspFlareGun.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Mod";
+				Text = "There's no flare gun spawned yet.";
+				Duration = 3
+			})
+		end
+	end)
+
+	EspBox.Button.MouseButton1Click:Connect(function()
+		if workspace.Debris.SupplyCrates:FindFirstChild("Box") then
+			if EspBoxDebounce == false then
+				EspBoxDebounce = true
+				local BillboardGui = Instance.new("BillboardGui")
+				local sd_1 = Instance.new("TextLabel")
+				local UICorner_1 = Instance.new("UICorner")
+				local UIStroke_1 = Instance.new("UIStroke")
+
+				BillboardGui.Name = "BillboardGui"
+				BillboardGui.Parent = workspace.Debris.SupplyCrates:FindFirstChild("Box").HitBox
+				BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+				BillboardGui.Active = true
+				BillboardGui.AlwaysOnTop = true
+				BillboardGui.LightInfluence = 1.000
+				BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+				BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 20, 0)
+
+				sd_1.LayoutOrder = 0
+				sd_1.TextWrapped = true
+				sd_1.BackgroundColor3 = Color3.fromRGB(126,104,63)
+				sd_1.Parent = BillboardGui
+				sd_1.Size = UDim2.new(0.800000012, 0,0.400000006, 0)
+				sd_1.BorderColor3 = Color3.fromRGB(27,42,53)
+				sd_1.Text = "Box"
+				sd_1.TextSize = 23
+				sd_1.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
+				sd_1.Name = "sd"
+				sd_1.Position = UDim2.new(0.100000001, 0,0.300000012, 0)
+
+				UICorner_1.Parent = sd_1
+				UICorner_1.CornerRadius = UDim.new(0,12)
+
+				UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				UIStroke_1.Parent = sd_1
+				UIStroke_1.Thickness = 0.6000000238418579
+				UIStroke_1.Color = Color3.fromRGB(68,68,68)
+				TweenService:Create(EspBox.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+				}):Play()
+			else
+				EspBoxDebounce = false
+				if workspace.Debris.SupplyCrates:FindFirstChild("Box").HitBox:FindFirstChild("BillboardGui") then
+					workspace.Debris.SupplyCrates:FindFirstChild("Box").HitBox:FindFirstChild("BillboardGui"):Destroy()
+				end
+				TweenService:Create(EspBox.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Mod";
+				Text = "There's no box dropped.";
+				Duration = 3
+			})
+		end
+	end)
+
+	-- Hover Functions::
+	for i,v in pairs(ScreenGui:GetDescendants()) do
+		if v.ClassName:match("Button") then
+			v.MouseEnter:Connect(function()
+				TweenService:Create(v, TweenInfo.new(0.35, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {Rotation = 10}):Play()
+			end)
+			v.MouseLeave:Connect(function()
+				TweenService:Create(v, TweenInfo.new(0.35, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {Rotation = 0}):Play()
+			end)
+		end
+	end
+
+	-- First::
+	coroutine.resume(coroutine.create(function()
+		TweenService:Create(ColorCorrectionEffect, TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+			Brightness = 0;
+			Contrast = 0;
+			Saturation = 0;
+		}):Play()
+		TweenService:Create(BlurEffect, TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+			Size = 0;
+		}):Play()
+		for i,v in pairs(ScreenGui:GetDescendants()) do
+			if v.ClassName == "Frame" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalPosition = v.Position;
+						OriginalBackroundTransparent = v.BackgroundTransparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = 1;
+						Position = v.Position - UDim2.new(0.014, 0, 0, 0);
+					}
+				):Play()
+			elseif v.ClassName == "ImageButton" or v.ClassName == "ImageLabel" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalPosition = v.Position;
+						OriginalBackroundTransparent = v.BackgroundTransparency;
+						OriginalImageTransparent = v.ImageTransparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = 1;
+						ImageTransparency = 1;
+						Position = v.Position - UDim2.new(0.014, 0, 0, 0);
+					}
+				):Play()
+			elseif v.ClassName == "TextButton" or v.ClassName == "TextLabel" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalPosition = v.Position;
+						OriginalBackroundTransparent = v.BackgroundTransparency;
+						OriginalTextTransparent = v.TextTransparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						BackgroundTransparency = 1;
+						TextTransparency = 1;
+						Position = v.Position - UDim2.new(0.014, 0, 0, 0);
+					}
+				):Play()
+			elseif v.ClassName == "UIStroke" then
+				if FrameTables[i] then
+				else
+					FrameTables[i] = {
+						Child = v;
+						FrameChildType = v.ClassName;
+						OriginalTransparent = v.Transparency;
+					}
+				end
+				TweenService:Create(
+					v,
+					TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0),
+					{
+						Transparency = 1;
+					}
+				):Play()
+			end
+		end
+		wait(1)
+		TweenService:Create(ColorCorrectionEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+			Brightness = 0;
+			Contrast = -0.25;
+			Saturation = -0.6;
+		}):Play()
+		TweenService:Create(BlurEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+			Size = 24;
+		}):Play()
+		GUI_OPEN()
+		wait(OpenCloseSecondsTween)
+		CanOpenBool = true
+	end))
+	--> Profile
+	coroutine.resume(coroutine.create(function()
+		local UserId = game.Players.LocalPlayer.UserId
+		local ThumType = Enum.ThumbnailType.AvatarBust
+		local ThumSize = Enum.ThumbnailSize.Size60x60
+		local Content = game.Players:GetUserThumbnailAsync(UserId, ThumType, ThumSize)
+		HomeFrame.Profile.Image = Content
+		HomeFrame.Username.Text = game.Players.LocalPlayer.DisplayName.."(@"..game.Players.LocalPlayer.Name..")"
+		HomeFrame.UserId.Text = "#"..game.Players.LocalPlayer.UserId
+	end))
+
+	-- Loop Functions::
+	RunService.RenderStepped:Connect(function()
+		if IncreaseLightDebounce == true then
+			game:GetService("Lighting").Ambient = Color3.fromRGB(255, 255, 255)
+			game:GetService("Lighting").FogEnd = 500
+			game:GetService("Lighting").FogColor = Color3.fromRGB(255, 255, 255)
+			TweenService:Create(game:GetService("Lighting"), TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				Ambient = Color3.fromRGB(255, 255, 255);
+				FogEnd = 500;
+				FogColor = Color3.fromRGB(255, 255, 255)
+			}):Play()
+		end
+	end)
+
+	while true do
+		wait()
+		if HomeFrame.Title.TextTransparency == 1 then
+			MainFrame.Visible = false
+		else
+			MainFrame.Visible = true
+		end
+		if EspBoxDebounce == true then
+			if workspace.Debris.SupplyCrates:FindFirstChild("Box") then
+			else
+				EspBoxDebounce = false
+				TweenService:Create(EspBox.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+			end
+		end
+		if EspFlareGunDebounce == true then
+			if workspace:FindFirstChild("FlareGunPickUp") then
+			else
+				EspFlareGunDebounce = false
+				TweenService:Create(EspFlareGun.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+			end
+		end
+	end
+end
+coroutine.wrap(QFXRS_fake_script)()

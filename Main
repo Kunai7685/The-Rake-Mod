@@ -63,10 +63,10 @@ local UIStroke_8 = Instance.new("UIStroke")
 local UIStroke_9 = Instance.new("UIStroke")
 local UIEStrokeBetch = Instance.new("UIStroke")
 local EspRake = Instance.new("TextLabel")
-local UIGradient = Instance.new("UIGradient")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIGradientRake = Instance.new("UIGradient")
+local UITextSizeConstraintRake = Instance.new("UITextSizeConstraint")
 local Button_5 = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
+local UICornerRAke = Instance.new("UICorner")
 
 EspRake.Name = "EspRake"
 EspRake.Parent = Folder
@@ -82,11 +82,11 @@ EspRake.TextScaled = true
 EspRake.TextSize = 17.000
 EspRake.TextWrapped = true
 
-UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
-UIGradient.Parent = EspRake
+UIGradientRake.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradientRake.Parent = EspRake
 
-UITextSizeConstraint.Parent = EspRake
-UITextSizeConstraint.MaxTextSize = 15
+UITextSizeConstraintRake.Parent = EspRake
+UITextSizeConstraintRake.MaxTextSize = 15
 
 Button_5.Name = "Button"
 Button_5.Parent = EspRake
@@ -100,8 +100,8 @@ Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 Button_5.TextSize = 14.000
 Button_5.TextTransparency = 1.000
 
-UICorner.CornerRadius = UDim.new(500, 500)
-UICorner.Parent = Button_5
+UICornerRAke.CornerRadius = UDim.new(500, 500)
+UICornerRAke.Parent = Button_5
 
 UIStroke_9.Parent = Button_5
 UIStroke_9.Thickness = 2.200000047683716
@@ -1025,7 +1025,7 @@ local function QFXRS_fake_script() -- MainFrame.Main
 				sd.BackgroundTransparency = 0.150
 				sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
 				sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
-				sd.Font = Enum.Font.Unknown
+				sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
 				sd.Text = "Rake"
 				sd.TextColor3 = Color3.fromRGB(0, 0, 0)
 				sd.TextSize = 19.000
@@ -1037,6 +1037,7 @@ local function QFXRS_fake_script() -- MainFrame.Main
 				UIStroke_1.Parent = sd
 				UIStroke_1.Thickness = 0.6000000238418579
 				UIStroke_1.Color = Color3.fromRGB(68,68,68)
+				UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			else
 				EspRakeDebounce = false
 				TweenService:Create(EspRake.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
@@ -1114,7 +1115,7 @@ local function QFXRS_fake_script() -- MainFrame.Main
 				sd_1.Parent = BillboardGui
 				sd_1.Size = UDim2.new(0.800000012, 0,0.400000006, 0)
 				sd_1.BorderColor3 = Color3.fromRGB(27,42,53)
-				sd_1.Text = "Box"
+				sd_1.Text = "Flare"
 				sd_1.TextSize = 23
 				sd_1.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
 				sd_1.Name = "sd"

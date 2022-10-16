@@ -548,6 +548,7 @@ local function QFXRS_fake_script() -- MainFrame.Main
 	local ColorCorrectionEffect = Instance.new("ColorCorrectionEffect")
 
 	-- Properties ::
+
 	--> BlurEffect
 	BlurEffect.Parent = game:GetService("Lighting")
 	BlurEffect.Enabled = true
@@ -932,6 +933,7 @@ local function QFXRS_fake_script() -- MainFrame.Main
 						}):Play()
 					else
 						OpenBool = true
+						game.Players.xX_InvestigatorXx:GetMouse().Icon = "rbxassetid://5510543382"
 						GUI_OPEN()
 						TweenService:Create(ColorCorrectionEffect, TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
 							Brightness = 0;

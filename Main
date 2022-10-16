@@ -1016,28 +1016,48 @@ local function QFXRS_fake_script() -- MainFrame.Main
 				BillboardGui.Active = true
 				BillboardGui.AlwaysOnTop = true
 				BillboardGui.LightInfluence = 1.000
-				BillboardGui.Size = UDim2.new(0, 90, 0, 50)
+				BillboardGui.Size = UDim2.new(0, 120,0, 40)
 				BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 4, 0)
+
+				local IntValue = Instance.new("IntValue", BillboardGui)
+				IntValue.Value = 0
 
 				sd.Name = "sd"
 				sd.Parent = BillboardGui
 				sd.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 				sd.BackgroundTransparency = 0.150
-				sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
-				sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+				sd.Position = UDim2.new(0.1,0,0.1,0)
+				sd.Size = UDim2.new(0.8,0,0.8,0)
 				sd.FontFace = Font.new("rbxasset://fonts/families/Roboto.json", Enum.FontWeight.Thin, Enum.FontStyle.Normal)
 				sd.Text = "Rake"
 				sd.TextColor3 = Color3.fromRGB(0, 0, 0)
-				sd.TextSize = 19.000
+				sd.TextScaled = true
 				sd.TextWrapped = true
 
-				UICorner.CornerRadius = UDim.new(0, 12)
+				UICorner.CornerRadius = UDim.new(0, 5)
 				UICorner.Parent = sd
 
 				UIStroke_1.Parent = sd
-				UIStroke_1.Thickness = 0.6000000238418579
+				UIStroke_1.Thickness = 0.6
 				UIStroke_1.Color = Color3.fromRGB(68,68,68)
 				UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+				coroutine.resume(coroutine.create(function()
+					while true do
+						wait(0.03)
+						if BillboardGui then
+							if sd then
+								local Players = game:GetService("Players")
+								local player = Players.LocalPlayer
+								local Object = game.Workspace.Rake.HumanoidRootPart
+								local Distance = (Object.Position - player.Character.HumanoidRootPart.Position).Magnitude
+								IntValue.Value = Distance
+								sd.Text = "Rake Distance: "..IntValue.Value
+							end
+						end
+					end
+				end))
+
 			else
 				EspRakeDebounce = false
 				TweenService:Create(EspRake.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {

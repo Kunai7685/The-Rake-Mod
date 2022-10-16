@@ -60,7 +60,53 @@ local UIStroke_5 = Instance.new("UIStroke")
 local UIStroke_6 = Instance.new("UIStroke")
 local UIStroke_7 = Instance.new("UIStroke")
 local UIStroke_8 = Instance.new("UIStroke")
+local UIStroke_9 = Instance.new("UIStroke")
 local UIEStrokeBetch = Instance.new("UIStroke")
+local EspRake = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Button_5 = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+EspRake.Name = "EspRake"
+EspRake.Parent = Folder
+EspRake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EspRake.BackgroundTransparency = 0.800
+EspRake.BorderSizePixel = 0
+EspRake.Position = UDim2.new(0.00100000005, 0, 0.702000022, 0)
+EspRake.Size = UDim2.new(0.739647269, 0, 0.106288753, 0)
+EspRake.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Light, Enum.FontStyle.Normal)
+EspRake.Text = "ESP Rake"
+EspRake.TextColor3 = Color3.fromRGB(58, 58, 58)
+EspRake.TextScaled = true
+EspRake.TextSize = 17.000
+EspRake.TextWrapped = true
+
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.20, 0.24), NumberSequenceKeypoint.new(0.35, 0.25), NumberSequenceKeypoint.new(0.50, 0.37), NumberSequenceKeypoint.new(0.67, 0.31), NumberSequenceKeypoint.new(0.77, 0.41), NumberSequenceKeypoint.new(0.89, 0.59), NumberSequenceKeypoint.new(0.96, 0.79), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient.Parent = EspRake
+
+UITextSizeConstraint.Parent = EspRake
+UITextSizeConstraint.MaxTextSize = 15
+
+Button_5.Name = "Button"
+Button_5.Parent = EspRake
+Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_5.BackgroundTransparency = 0.650
+Button_5.Position = UDim2.new(0.0393258445, 0, 0, 0)
+Button_5.Size = UDim2.new(0.112359554, 0, 1, 0)
+Button_5.Font = Enum.Font.SourceSans
+Button_5.Text = ""
+Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.TextSize = 14.000
+Button_5.TextTransparency = 1.000
+
+UICorner.CornerRadius = UDim.new(500, 500)
+UICorner.Parent = Button_5
+
+UIStroke_9.Parent = Button_5
+UIStroke_9.Thickness = 2.200000047683716
+UIStroke_9.Color = Color3.fromRGB(83,83,83)
+UIStroke_9.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
 UIEStrokeBetch.Parent = Button_4
 UIEStrokeBetch.Thickness = 2.200000047683716
@@ -527,7 +573,7 @@ local function QFXRS_fake_script() -- MainFrame.Main
 	local OpenBool = true; local CanOpenBool = false
 	local ButtonChangeFrameDebounce = false
 
-	local EspBoxDebounce = false; local EspFlareGunDebounce = false; local EspPlacesDebounce = false; local IncreaseLightDebounce = false
+	local EspBoxDebounce = false; local EspFlareGunDebounce = false; local EspPlacesDebounce = false; local IncreaseLightDebounce = false; local EspRakeDebounce = false
 
 	-- Functions ::
 	local function GUI_CLOSE()
@@ -951,6 +997,63 @@ local function QFXRS_fake_script() -- MainFrame.Main
 	local EspBox = FolderFrame.EspBox
 	local EspFlareGun = FolderFrame.EspFlareGun
 	local IncreaseLight = FolderFrame.IncreaseLight
+	local EspRake = FolderFrame.EspRake
+
+	EspRake.Button.MouseButton1Click:Connect(function()
+		if workspace:FindFirstChild("Rake") then
+			if EspRakeDebounce == false then
+				EspRakeDebounce = true
+				TweenService:Create(EspRake.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+				}):Play()
+				local BillboardGui = Instance.new("BillboardGui")
+				local sd = Instance.new("TextLabel")
+				local UICorner = Instance.new("UICorner")
+				local UIStroke_1 = Instance.new("UIStroke")
+
+				BillboardGui.Parent = game.Workspace.Rake.HumanoidRootPart
+				BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+				BillboardGui.Active = true
+				BillboardGui.AlwaysOnTop = true
+				BillboardGui.LightInfluence = 1.000
+				BillboardGui.Size = UDim2.new(0, 90, 0, 50)
+				BillboardGui.StudsOffsetWorldSpace = Vector3.new(0, 4, 0)
+
+				sd.Name = "sd"
+				sd.Parent = BillboardGui
+				sd.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+				sd.BackgroundTransparency = 0.150
+				sd.Position = UDim2.new(0.100000001, 0, 0.300000012, 0)
+				sd.Size = UDim2.new(0.800000012, 0, 0.400000006, 0)
+				sd.Font = Enum.Font.Unknown
+				sd.Text = "Rake"
+				sd.TextColor3 = Color3.fromRGB(0, 0, 0)
+				sd.TextSize = 19.000
+				sd.TextWrapped = true
+
+				UICorner.CornerRadius = UDim.new(0, 12)
+				UICorner.Parent = sd
+
+				UIStroke_1.Parent = sd
+				UIStroke_1.Thickness = 0.6000000238418579
+				UIStroke_1.Color = Color3.fromRGB(68,68,68)
+			else
+				EspRakeDebounce = false
+				TweenService:Create(EspRake.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+				if workspace:FindFirstChild("Rake") then
+					game.Workspace.Rake.HumanoidRootPart.BillboardGui:Destroy()
+				end
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Mod";
+				Text = "Rake is still in the cave...";
+				Duration = 3
+			})
+		end
+	end)
 
 	EspPlaces.Button.MouseButton1Click:Connect(function()
 		if EspPlacesDebounce == false then
@@ -1261,6 +1364,15 @@ local function QFXRS_fake_script() -- MainFrame.Main
 			else
 				EspFlareGunDebounce = false
 				TweenService:Create(EspFlareGun.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				}):Play()
+			end
+		end
+		if EspRakeDebounce == true then
+			if workspace:FindFirstChild("Rake") then
+			else
+				EspRakeDebounce = false
+				TweenService:Create(EspRake.Button, TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
 					BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				}):Play()
 			end
